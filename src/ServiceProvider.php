@@ -11,7 +11,10 @@ class ServiceProvider extends BaseProvider
      */
     public function register()
     {
-        $this->app['router']->group([], function ($router) {
+        $this->app['router']->group([
+            'middleware' => ['api'],
+            'namespace' => 'iMemento\HealthProbe'
+        ], function ($router) {
             $router->get('healthy', 'HealthController@check');
         });
     }
