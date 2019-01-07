@@ -1,7 +1,7 @@
 {
     "name": "imemento/health-probe",
     "description": "Health Probe",
-    "homepage": "https://gitlab.com/imemento/composer/packages/health-probe",
+    "homepage": "https://github.com/mementohub/health-probe",
     "license": "MIT",
     "authors": [
         {
@@ -32,10 +32,6 @@
     "config": {
         "sort-packages": true
     },
-    "repositories": [
-        {"type": "composer", "url": "https://repo.packagist.com/imemento/"},
-        {"packagist.org": false}
-    ],
     "minimum-stability": "dev",
     "prefer-stable": false,
     "extra": {
