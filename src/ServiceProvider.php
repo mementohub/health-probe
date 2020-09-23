@@ -2,9 +2,7 @@
 
 namespace iMemento\HealthProbe;
 
-use Illuminate\Support\ServiceProvider as BaseProvider;
-
-class ServiceProvider extends BaseProvider
+class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     /**
      * Register the application services.
@@ -12,7 +10,7 @@ class ServiceProvider extends BaseProvider
     public function register()
     {
         $this->app['router']->group([], function ($router) {
-            $router->get('healthy', 'HealthController@check');
+            $router->get('healthy', [HealthController::class, 'check']);
         });
     }
 }

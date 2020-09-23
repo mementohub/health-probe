@@ -2,9 +2,6 @@
 
 namespace iMemento\HealthProbe;
 
-use Illuminate\Filesystem\Filesystem;
-use Illuminate\Support\ServiceProvider;
-
 class HealthController
 {
     /**

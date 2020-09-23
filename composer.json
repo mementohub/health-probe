@@ -1,7 +1,7 @@
 {
     "name": "imemento/health-probe",
     "description": "Health Probe",
-    "homepage": "https://gitlab.com/imemento/composer/packages/health-probe",
+    "homepage": "https://github.com/mementohub/health-probe",
     "license": "MIT",
     "authors": [
         {
@@ -11,10 +11,12 @@
         }
     ],
     "require": {
-        "php": "^7.1"
+        "php": "^7.1",
+        "laravel/framework": "^5.8|^6.0|^7.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.0"
+        "orchestra/testbench": "^3.8|^4.0|5.0",
+        "phpunit/phpunit": "^7.0|^8.0|^9.0"
     },
     "autoload": {
         "psr-4": {
@@ -23,7 +25,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "iMemento\\HealthProbe\\Test\\": "tests"
+            "iMemento\\HealthProbe\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -32,10 +34,6 @@
     "config": {
         "sort-packages": true
     },
-    "repositories": [
-        {"type": "composer", "url": "https://repo.packagist.com/imemento/"},
-        {"packagist.org": false}
-    ],
     "minimum-stability": "dev",
     "prefer-stable": false,
     "extra": {
