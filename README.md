@@ -1,8 +1,8 @@
 # iMemento Health Probe
-[![Build Status](https://travis-ci.org/mementohub/health-probe.svg?branch=master)](https://travis-ci.org/mementohub/health-probe)
-[![Latest Stable Version](https://poser.pugx.org/imemento/health-probe/v/stable)](https://packagist.org/packages/imemento/health-probe)
-[![License](https://poser.pugx.org/imemento/health-probe/license)](https://packagist.org/packages/imemento/health-probe)
-[![Total Downloads](https://poser.pugx.org/imemento/health-probe/downloads)](https://packagist.org/packages/imemento/health-probe)
+[![Build Status](https://github.com/mementohub/health-probe/workflows/Testing/badge.svg)](https://github.com/mementohub/health-probe/actions)
+[![Latest Stable Version](https://img.shields.io/packagist/v/imemento/health-probe)](https://packagist.org/packages/imemento/health-probe)
+[![License](https://img.shields.io/packagist/l/imemento/health-probe)](https://packagist.org/packages/imemento/health-probe)
+[![Total Downloads](https://img.shields.io/packagist/dt/imemento/health-probe)](https://packagist.org/packages/imemento/health-probe)
 
 Readiness and Liveness probe for K8s.
 
