@@ -38,6 +38,11 @@ jobs:
             -   name: Install dependencies
                 run: |
                     composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
-                    composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
+                    composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest --no-progress
+
+            -   name: Show relevant dependencies
+                run: |
+                    composer show | grep -e "laravel/framework \|guzzlehttp/guzzle \|phpunit/phpunit \|orchestra/testbench "
+                    
             -   name: Execute tests
                 run: vendor/bin/phpunit
